@@ -52,9 +52,9 @@ public class StepDefinitions {
     @And("^API (.*) contains the correct schema structure$")
     public void validateSchema(final String operationType) {
         if (operationType.equalsIgnoreCase("request")) {
-            httpRequest.then().body(matchesJsonSchemaInClasspath("DataFiles/users_request_schema.json"));
+            httpRequest.then().body(matchesJsonSchemaInClasspath("datafiles/users_request_schema.json"));
         } else {
-            response.then().body(matchesJsonSchemaInClasspath("DataFiles/users_response_schema.json"));
+            response.then().body(matchesJsonSchemaInClasspath("datafiles/users_response_schema.json"));
         }
     }
 
