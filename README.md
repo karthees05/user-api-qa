@@ -13,9 +13,9 @@ Steps to follow:
 
 ```> src/test/resources/features```
 
-- In IDE Go to **src> test> RunCuke**
+- In IDE Go to **src> test> java> runner> RunCuke**
 
-- Right click and Run
+- Right click and Run by setting the below runtime parameter
 
 The Run time parameter needs to be updated based on which environment we are running.
 The following parameters are valid if we run through runner class for local profile
