@@ -9,7 +9,7 @@ Steps to follow:
 
 - Import gradle Dependencies
 
-- Check the BDD Feature files located at:
+- Check the BDD Feature files are available in:
 
 ```> src/test/resources/features```
 
@@ -18,7 +18,7 @@ Steps to follow:
 - Right click and Run
 
 The Run time parameter needs to be updated based on which environment we are running.
-The following params are valid if we run through runner class for local profile
+The following parameters are valid if we run through runner class for local profile
 -Dservice.uri=http://localhost:8080 -Dservice.profile=local
 Similarly we can run for other environments by changing the above 2 parameters
 
