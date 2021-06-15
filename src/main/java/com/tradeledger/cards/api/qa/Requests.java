@@ -16,15 +16,15 @@ public class Requests {
     public void selectEndPoint(final String userEndPoint) {
         if ("eligibility-check".equalsIgnoreCase(userEndPoint)) {
             if (Constants.LOCAL_OR_REAL_SERVICE_URI.equalsIgnoreCase("dev")) {
-                httpRequest.baseUri(Constants.REAL_HOST_URI + Constants.ELIGIBILITY_CHECK_END_POINT);
+                httpRequest.baseUri(Constants.REAL_SERVICE_URI + Constants.ELIGIBILITY_CHECK_END_POINT);
             } else if (Constants.LOCAL_OR_REAL_SERVICE_URI.equalsIgnoreCase("dev-int")) {
-                httpRequest.baseUri(Constants.REAL_HOST_URI + Constants.ELIGIBILITY_CHECK_END_POINT);
+                httpRequest.baseUri(Constants.REAL_SERVICE_URI + Constants.ELIGIBILITY_CHECK_END_POINT);
             } else if (Constants.LOCAL_OR_REAL_SERVICE_URI.equalsIgnoreCase("sit")) {
-                httpRequest.baseUri(Constants.REAL_HOST_URI + Constants.ELIGIBILITY_CHECK_END_POINT);
+                httpRequest.baseUri(Constants.REAL_SERVICE_URI + Constants.ELIGIBILITY_CHECK_END_POINT);
             } else if (Constants.LOCAL_OR_REAL_SERVICE_URI.equalsIgnoreCase("bench")) {
-                httpRequest.baseUri(Constants.REAL_HOST_URI + Constants.ELIGIBILITY_CHECK_END_POINT);
+                httpRequest.baseUri(Constants.REAL_SERVICE_URI + Constants.ELIGIBILITY_CHECK_END_POINT);
             } else if (Constants.LOCAL_OR_REAL_SERVICE_URI.equalsIgnoreCase("production")) {
-                httpRequest.baseUri(Constants.REAL_HOST_URI + Constants.ELIGIBILITY_CHECK_END_POINT);
+                httpRequest.baseUri(Constants.REAL_SERVICE_URI + Constants.ELIGIBILITY_CHECK_END_POINT);
             } else if (Constants.LOCAL_OR_REAL_SERVICE_URI.equalsIgnoreCase("local")) {
                 httpRequest.baseUri(Constants.LOCAL_SERVICE_URI + Constants.ELIGIBILITY_CHECK_END_POINT);
             }
