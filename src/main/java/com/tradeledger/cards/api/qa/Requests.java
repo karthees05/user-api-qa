@@ -29,12 +29,8 @@ public class Requests {
                 httpRequest.baseUri(Constants.LOCAL_SERVICE_URI + Constants.ELIGIBILITY_CHECK_END_POINT);
             }
         } else {
-            throw new CustomException("ERROR: Invalid Endpoint supplied");
+            throw new CustomException("Invalid URL");
         }
-    }
-
-    public Response getRequest() {
-        return httpRequest.request(Method.GET);
     }
 
     public Response postRequest(final JSONObject payload, final String path) {
