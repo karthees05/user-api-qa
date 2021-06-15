@@ -2,7 +2,7 @@
 Feature: Validate the User API is available to use
 
   @api_smoke_test_1
-  Scenario Outline: Validate the POST Request of User API
+  Scenario Outline: Validate the POST Request of User registration API
     Given the API end point eligibility-check is available to use
     And API request contains the correct schema structure
     When user POST a request with valid data <name> , <address> , <email>
@@ -17,7 +17,7 @@ Feature: Validate the User API is available to use
       | Theresa | test address 3 | iamtheresa@testmail.com | C2            |
 
   @api_smoke_test_2
-  Scenario Outline: Validate the POST Request of User API with missing valid input data
+  Scenario Outline: Validate the POST Request of User registration API with missing valid input data
     Given the API end point eligibility-check is available to use
     And API request contains the correct schema structure
     When user POST a request without a valid field <name> , <address> , <email>
@@ -28,3 +28,7 @@ Feature: Validate the User API is available to use
       |       | test address 1 | iamboris@testmail.com |
       | Boris |                | iamboris@testmail.com |
       | Boris | test address 1 |                       |
+      |       |                | iamboris@testmail.com |
+      |       | test address 1 |                       |
+      | Boris |                |                       |
+      |       |                |                       |
